@@ -1,17 +1,25 @@
-# Website
+# My AI & Robotics Documentation Site
 
-This website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator.
+This documentation website is built using [Docusaurus](https://docusaurus.io/), a modern static website generator. It includes an integrated RAG chatbot for intelligent Q&A about the content.
+
+## Features
+
+- **Interactive Documentation**: Clean, searchable documentation with code examples
+- **Integrated Chatbot**: RAG-powered Q&A system embedded in the site
+- **Mobile Responsive**: Works perfectly on all devices
+- **Fast Search**: Built-in search functionality
+- **Modern UI**: Clean, professional design
 
 ## Installation
 
 ```bash
-yarn
+npm install
 ```
 
 ## Local Development
 
 ```bash
-yarn start
+npm start
 ```
 
 This command starts a local development server and opens up a browser window. Most changes are reflected live without having to restart the server.
@@ -19,23 +27,11 @@ This command starts a local development server and opens up a browser window. Mo
 ## Build
 
 ```bash
-yarn build
+npm run build
 ```
 
 This command generates static content into the `build` directory and can be served using any static contents hosting service.
 
 ## Deployment
 
-Using SSH:
-
-```bash
-USE_SSH=true yarn deploy
-```
-
-Not using SSH:
-
-```bash
-GIT_USER=<Your GitHub username> yarn deploy
-```
-
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+The site is configured for deployment on Vercel with the chatbot backend integration.

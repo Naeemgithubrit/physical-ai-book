@@ -4,15 +4,17 @@
   "installCommand": "npm install",
   "framework": "docusaurus",
   "env": {
-    "DOCUSAURUS_URL": "https://physical-ai-and-humanoid-robotics-ten.vercel.app",
+    "DOCUSAURUS_URL": "https://your-project-name.vercel.app",
     "DOCUSAURUS_BASE_URL": "/",
-    "NODE_VERSION": "20"
+    "NODE_VERSION": "20",
+    "REACT_APP_BACKEND_URL": "https://rag-chatbot-backend.onrender.com"
   },
   "build": {
     "env": {
-      "DOCUSAURUS_URL": "https://physical-ai-and-humanoid-robotics-ten.vercel.app",
+      "DOCUSAURUS_URL": "https://your-project-name.vercel.app",
       "DOCUSAURUS_BASE_URL": "/",
-      "NODE_VERSION": "20"
+      "NODE_VERSION": "20",
+      "REACT_APP_BACKEND_URL": "https://rag-chatbot-backend.onrender.com"
     }
   }
 }

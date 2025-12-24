@@ -383,12 +383,13 @@ export function CustomChatWidget() {
               fontSize: '14px',
               lineHeight: '1.5',
             }}
-            dangerouslySetInnerHTML={
-              msg.role === 'assistant'
-                ? renderMarkdown(msg.content)
-                : { __html: msg.content }
-            }
-          />
+          >
+            {msg.role === 'assistant' ? (
+              <div dangerouslySetInnerHTML={renderMarkdown(msg.content)} />
+            ) : (
+              msg.content
+            )}
+          </div>
         ))}
         {isLoading && (
           <div style={{

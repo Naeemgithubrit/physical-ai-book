@@ -16,15 +16,15 @@ const config: Config = {
 
   // Set the production url of your site here
   // Uses environment variable for dual deployment (GitHub Pages + Vercel)
-  url: process.env.DOCUSAURUS_URL || 'https://naeems.github.io',
+  url: process.env.DOCUSAURUS_URL || 'https://naeemgithubrit.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
-  // For GitHub Pages: /my-physical-ai-book/
+  // For GitHub Pages: /Hackathon-AI-book/
   // For Vercel: /
-  baseUrl: process.env.DOCUSAURUS_BASE_URL || '/my-physical-ai-book/',
+  baseUrl: process.env.DOCUSAURUS_BASE_URL || '/Hackathon-AI-book/',
 
   // GitHub pages deployment config.
-  organizationName: 'NaeemShah',
-  projectName: 'my-physical-ai-book',
+  organizationName: 'Naeemgithubrit',
+  projectName: 'Hackathon-AI-book',
 
   onBrokenLinks: 'throw',
 
@@ -59,7 +59,7 @@ const config: Config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/Naeemgithubrit/Hackathon-AI-book/tree/main/packages/create-docusaurus/templates/shared/',
         },
         blog: {
           showReadingTime: true,
@@ -70,7 +70,7 @@ const config: Config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/Naeemgithubrit/Hackathon-AI-book/tree/main/packages/create-docusaurus/templates/shared/',
           // Useful options to enforce blogging best practices
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
@@ -104,7 +104,7 @@ const config: Config = {
         },
         {to: '/blog', label: 'Blog', position: 'left'},
         {
-          href: 'https://github.com/NaeemShah/my-physical-ai-book',
+          href: 'https://github.com/Naeemgithubrit/Hackathon-AI-book',
           label: 'GitHub',
           position: 'right',
         },
@@ -151,7 +151,7 @@ const config: Config = {
             },
             {
               label: 'GitHub',
-              href: 'https://github.com/facebook/docusaurus',
+              href: 'https://github.com/Naeemgithubrit/Hackathon-AI-book',
             },
           ],
         },

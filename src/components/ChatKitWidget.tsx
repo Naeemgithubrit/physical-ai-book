@@ -102,9 +102,9 @@ function ChatKitInner({
 
     const hostname = window.location.hostname;
 
-    // Production: deployed on GitHub Pages or custom domain
-    if (hostname === 'naeems.github.io' || hostname === 'my-site.com') {
-      return 'https://my-backend-url.com';
+    // Production: deployed on Vercel or custom domain
+    if (hostname.includes('vercel.app') || hostname === 'your-project-name.vercel.app') {
+      return 'https://rag-chatbot-backend.onrender.com';
     }
 
     // Development: localhost
@@ -194,7 +194,7 @@ function ChatKitInner({
   return (
     <>
       {/* Minimized chat icon */}
-      <div
+      <button
         onClick={onToggleMinimize}
         style={{
           position: 'fixed',
@@ -212,6 +212,8 @@ function ChatKitInner({
           cursor: 'pointer',
           boxShadow: '0 4px 12px rgba(45, 140, 255, 0.4)',
           transition: 'all 0.3s ease',
+          border: 'none',
+          padding: 0,
         }}
         onMouseEnter={(e) => {
           e.currentTarget.style.transform = 'scale(1.1)';
@@ -226,7 +228,7 @@ function ChatKitInner({
         <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
           <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
         </svg>
-      </div>
+      </button>
 
       {/* Full chat widget - kept mounted for instant appearance */}
       <div style={{
