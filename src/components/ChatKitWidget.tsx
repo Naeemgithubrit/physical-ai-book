@@ -103,7 +103,7 @@ function ChatKitInner({
     const hostname = window.location.hostname;
 
     // Production: deployed on Vercel or custom domain
-    if (hostname.includes('vercel.app') || hostname === 'your-project-name.vercel.app') {
+    if (hostname.includes('vercel.app') || hostname === 'https://naeemhuggingface-backend-deploy.hf.space/api/ask') {
       return 'https://rag-chatbot-backend.onrender.com';
     }
 
